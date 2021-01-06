@@ -3,21 +3,29 @@ html,body{
     padding: 0;
     font-family: 'Roboto', sans-serif;
     background-color: #E5E5E5;
-    margin-bottom: 100px;
+    width: 100%;
 }
-h1{
+
+/* ......................page css........................... */
+h1,h2{
     font-family: 'Bebas Neue', cursive;
 }
-.bg-yellow{
+p{
+    color: #363958;
+}
+.fnt-roboto{
+    font-family: 'Roboto', sans-serif;
+}
+.yellow{
     background-color: yellowgreen;
 }
-.bg-blue{
+.blue{
     background-color: blue;
 }
-.bg-red{
+.red{
     background-color: red;
 }
-.bg-green{
+.green{
     background-color: green;
 }
 .txt-blue{
@@ -27,20 +35,27 @@ h1{
     color: #FF8367;
 }
 
+
+ /* ---------------header------------------------- */
 header{
     padding: 20px 0;
     padding-right: 45px;
     overflow: hidden;
-    /* margin-bottom: 10px; */
+    margin-bottom: 40px;
 }
-header a{
-    text-decoration: none;
-    color: #3C3C3C;
+header li{
     float: right;
-    display: inline-block;
+    display: block;
     margin: 0 5px;
     font-weight: 500;
+    list-style: none;
 }
+ul li a{
+    text-decoration: none;
+    color: #3C3C3C;
+}
+
+/* ................intro................ */
 .intro{
     padding: 0 10px;
     overflow: hidden;
@@ -84,20 +99,25 @@ header a{
 }
 .intro .right img{
     width: 75%;
-    margin-top: -60px;
 }
+
+/* .................about................. */
 .about{
     padding: 10px;
     overflow: hidden;
+    width: 90%;
+    margin: auto;
+    margin-top: 50px;
 }
 .about .left{
     width: 45%;
     float: left;
-    text-align: right;
+    /* text-align: right; */
 }
 .about .left img{
-    width: 75%;
-    margin-top: -95px;
+    width: 80%;
+    margin-top: 80px;
+    margin-left: 50px;
 }
 .about .right{
     float: right;
@@ -118,3 +138,167 @@ header a{
 .about .btn{
     padding: 18px 25px;
 }
+
+/* .....................projects................... */
+.projects{
+    background-color: #ffffff;
+    /* overflow: hidden; */
+    padding-bottom: 200px;
+}
+.headline{
+    margin-top: 50px;
+    text-align: center;
+    padding: 35px 0;
+    margin-bottom: 20px;
+}
+.headline h1{
+    margin-top: 60px;
+    font-size: 50px;
+    font-weight: 350;
+}
+.box{
+    width: 100%;
+    margin: auto;
+    text-align: center;
+
+}
+.box a{
+    text-decoration: none;
+    color: #363958;
+}
+.box h2{
+    font-weight: 800;
+}
+.box p{
+    color: #6C6C6C;
+}
+
+.card{
+    background-color: #E5E5E5;
+    width: 25%;
+    /* float: left; */
+    padding-left: 10px;
+    /* border: 1px solid red; */
+    border-radius: 10px;
+    margin: 0 20px;
+    text-align: center;
+    display: inline-block;
+    box-shadow: 0 4px 8px 0 #E9E9E9;
+}
+.card .details{
+    text-align: left;
+    padding-left: 10px;
+    padding-bottom: 10px;
+}
+.card .image{
+    
+    padding-top: 15px;
+}
+.card img{
+    width: 90%;
+}
+
+/* ................inquiry.................. */
+.inquiry .mid{
+    margin: 100px 0;
+    background: url("images/inq.png");
+    background-repeat: no-repeat;
+    height: 300px;
+    background-position: center;
+    background-size: 60%;
+}
+.chat{
+    width: 50%;
+    margin: auto;
+    padding-top: 60px;
+}
+.chat h1{
+    float: left;
+    font-size: 65px;
+    font-weight: 300;
+    color: #E5E5E5;
+
+}
+.chat .btn{
+    display: block;
+    margin-top: 65px;
+    float: right;
+    padding: 18px 20px;
+}
+/* ................connect............... */
+.contact{
+    text-align: center;
+    padding-bottom: 60px;
+}
+.contact h2{
+    font-size: 25px;
+    padding: 0;
+    margin: 0;
+    padding-top: 10px;
+    color: #696871;
+    font-weight: 300;
+}
+.contact h1{
+    font-size: 35px;
+    padding: 0;
+    margin-bottom: 25px;
+}
+.group img{
+    width: 3%;
+    padding: 0 10px;
+}
+
+/* .....................massage..................... */
+.massage{
+    text-align: center;
+    width: 100%;
+    padding-top: 40px;
+    padding-bottom: 90px;
+    background-color: #ffffff;
+}
+.massage h1{
+    font-size: 30px;
+    padding-bottom: 15px;
+    letter-spacing: 4px;
+    font-weight: 800;
+    font-family: 'Roboto', sans-serif;
+    
+}
+.massage span{
+    font-size: 40px;
+    letter-spacing: normal;
+    font-weight: bolder;
+    color: #696871;
+    
+}
+.massage .inp{
+  width: 20%;
+  padding: 12px 20px;
+  margin: 12px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  background-color: #E5E5E5;
+}
+textarea{
+    display: inline-block;
+}
+.submit{
+    padding: 10px 120px;
+}
+/* ..............footer............. */
+hr{
+    padding: 0;
+    margin: 0;
+}
+footer{
+     padding-top: 8px;
+     color: #3C3C3C;
+     text-align: center;
+     padding-bottom: 30px;
+ }
+
+ footer a{
+     text-decoration: none;
+     color: #FF8367;
+ }
